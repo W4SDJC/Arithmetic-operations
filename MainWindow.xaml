@@ -1,0 +1,40 @@
+﻿<Window x:Name="Form1" x:Class="MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Arithmetic_operations"
+        mc:Ignorable="d"
+        Title="Arithmetic operations" Height="308"  Width="510" AutomationProperties.Name="Form1" Top="31" VerticalAlignment="Center" HorizontalAlignment="Center" Icon="/236700.png">
+
+    <Grid x:Name="MainGrid">
+        <Label x:Name="operSign" Content="" Margin="140,62,0,0" FontSize="20" Height="32" Width="160" HorizontalAlignment="Left" VerticalAlignment="Top" HorizontalContentAlignment="Center"/>
+        <GroupBox Header="Operations" Margin="313,9,0,0" Height="209" VerticalAlignment="Top" HorizontalAlignment="Left" Width="172">
+            <Grid ShowGridLines="False">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <RadioButton x:Name="radPlus" Grid.Row="0" Content="Plus" FontSize="18" IsChecked="True"/>
+                <RadioButton x:Name="radMinus" Grid.Row="1" Content="Minus" FontSize="18" />
+                <RadioButton x:Name="radDivision" Grid.Row="2" Content="Division" FontSize="18"/>
+                <RadioButton x:Name="radMultiplication" Grid.Row="3" Content="Multiplication" FontSize="18"/>
+            </Grid>
+        </GroupBox>
+
+        <Label x:Name="FNum" Content="First Num" Margin="10,30,0,0"  AutomationProperties.Name="F_Num" FontSize="18" Height="32" VerticalAlignment="Top" HorizontalAlignment="Left" Width="124" HorizontalContentAlignment="Center"/>
+        <TextBox x:Name="FNumField" Margin="140,30,0,0" TextWrapping="Wrap" HorizontalAlignment="Left" Width="160" Height="32" VerticalAlignment="Top"/>
+
+        <Label Content="Second Num" Margin="11,100,0,0" FontSize="18" Height="32" VerticalAlignment="Top" HorizontalAlignment="Left" Width="124" HorizontalContentAlignment="Center"/>
+        <TextBox x:Name="SNumField" Margin="140,100,0,0" TextWrapping="Wrap" HorizontalAlignment="Left" Width="160" Height="32" VerticalAlignment="Top"/>
+
+        <Label x:Name="Answer" Content="Answer" HorizontalAlignment="Left" Margin="11,137,0,0" Width="124" AutomationProperties.Name="Answer" FontSize="22" Height="35" VerticalAlignment="Top" HorizontalContentAlignment="Center"/>
+        <TextBox x:Name="AnsField" HorizontalAlignment="Left" Margin="140,137,0,0" TextWrapping="Wrap" Width="160" Height="35" VerticalAlignment="Top" Padding="0,5,0,0"/>
+        <Button x:Name="CalcBTN" Content="Calculate" Height="35" Background="#FFDDDDDD" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="199,183,0,0" Width="102" FontSize="16"/>
+
+        <Button x:Name="ExitBTN" Content="Exit" Height="35" Background="#FFDDDDDD" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="0,0,10,10" Width="60" FontSize="16"/>
+
+    </Grid>
+</Window>
